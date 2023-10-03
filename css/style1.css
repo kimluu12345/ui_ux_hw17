@@ -1,0 +1,113 @@
+
+
+.navDiv{
+    font-family: 'Jura', sans-serif;
+    text-align: center;
+    color: #1D49A0;
+    font-weight: bold;
+    font-size: 30px;
+    background-color: #ffffff;  
+}
+
+   
+body{
+    font-family: "Jura", sans-serif;
+  background-image: url(../images/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+h1{
+    font-size: 30px;
+    }
+
+h2{
+    text-decoration-line: underline;
+    font-size: 20px;
+    }
+    
+h3{
+    font-size: 20px;
+    }
+
+
+h4{
+    font-size: 15px;
+    }
+
+.navDiv{
+    font-family: 'Jura', sans-serif;
+    text-align: center;
+    color: #1D49A0;
+    font-weight: bold;
+    font-size: 30px;
+    background-color: #ffffff;  
+}
+
+.footerDiv{
+    font-family: 'Jura', sans-serif;
+    text-align: center;
+    color: #1D49A0;
+    font-weight: bold;
+    font-size: 40px;
+    background-color: #ffffff;  
+}
+.footerContainer {
+    display: flex;
+    background-color: white;
+    text-align: center;
+    justify-content: space-around;
+  }
+  
+  .footerContainer > div {
+    background-color: #ffffff;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+    color: #1D49A0;
+  }
+
+  .dayContainer {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+  .timeContainer {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+  }
+
+  
+body{
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-family: 'Jura', sans-serif;
+    background-image: url("css/images/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.footDiv{
+    background-color: white;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.footerContainer > div {
+    background-color: #ffffff;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+    color: #1D49A0;
+  }
+
+  .dayContainer > div1 {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .timeContainer > div2 {
+    display: flex;
+    text-align: right;
+  }
+

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&amp;display=swap" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+
+  <title> V8 Smokehouse</title>
+
+  <title> CSS Background Images</title>
+<style type="text/css">
+
+body{
+  background-image: url("images/background.jpg");
+}  
+
+</style>
+  <nav id="navBar">
+    <div class="icons1">
+      <img src="images/SketchLogo1.png">
+      </div>
+
+    <div id="navigation">
+      <p>Home</p>
+      <p>Products</p>
+      <p class="highlight">Shop Info</p>
+      <p>Testimonials</p>
+      <p>FAQs</p>
+      <p>Education</p>
+      <p>Legal</p>
+    </div>
+
+    <div class="icons">
+    <img src="images/chatBubble.png">
+    </div>
+    
+  </nav>
+  <section id="heroGrid">
+    <div id="featuredProduct" class="heroGridArea">
+      <div id="headline">
+        <h2>Location</h2>
+      </div>
+    </div>
+    <div id="secondaryProduct" class="heroGridArea"></div>
+    <div id="CTA" class="heroGridArea">
+        <h4>Shop Now</h4>
+        <img src="images/downVector.png">
+      </div>
+  </section>
+
+  </div>
+  <section id="categoryGrid">
+    <div id="hoursOfOperation">
+      <div class="heading"> Hours of Operation</div>
+    </div>
+    <div id="phone" class="categoryGridArea">
+      <div class="heading">Phone</div>
+    </div>
+
+    </div>
+  </section>
+</body>
+</html>
+
+/* Grid CSS */
+
+#heroGrid {
+  margin: 0px 5%;
+  display: grid;
+  min-height: 500px;
+  height: 70vh;
+  grid-template-rows: 75% 25%;
+  grid-template-columns: 75% 25%;
+  grid-template-areas:
+  "featuredProduct secondaryProduct"
+  "featuredProduct CTA";
+}
+
+#featuredProduct {
+  grid-area: featuredProduct;
+  background-image: url("../images/furniture1.png");
+}
+
+#secondaryProduct {
+  grid-area: secondaryProduct;
+  background-image: url("../images/furniture2.png");
+}
+
+#CTA {
+  grid-area: CTA;
+  background-image: url("../images/woodbg.png");
+  justify-content: space-around;
+  cursor: pointer;
+}
+
+#headline {
+  background-color: rgba(255,255,255,0.8);
+  border-bottom: 5px solid #FF6200;
+  position: absolute;
+  right: -50px;
+  top: 100px;
+  padding: 25px;
+  max-width: 550px;
+  z-index: 100;
+}
+
+.heroGridArea {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+  display: flex;
+  position: relative;
+}
+
+/* Category Grid CSS */
+
+.subHeading {
+  text-align: center;
+  border-bottom: 2px solid black;
+  width: 300px;
+  margin: 50px auto;
+}
+
+#categoryGrid {
+  margin: 0px 5%;
+  display: grid;
+  grid-template-rows: 300px 300px 300px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+  "hoursOfOperation phone"
+  "hoursOfOperation phone"
+  ;
+}
+
+#hourOfOperation {
+  grid-area: hoursOfOperation;
+}
+
+#phone {
+  grid-area: phone;
+}
+
+
+.categoryGridArea {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 5px;
+  cursor: pointer;
+  display: grid;
+  align-content: end;
+}
+
+.heading {
+  background-color: rgba(0,0,0,0.7);
+  padding: 15px;
+  height: 25px;
+  color: white;
+  font-size: 18px;
+  border-bottom: 5px solid #FF6200;
+}
